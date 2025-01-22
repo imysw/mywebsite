@@ -2,8 +2,7 @@
 title: Si Yuan's Data Science Hub
 author: Si Yuan
 description: Exploring the intersection of data science, deep learning, and innovation.
-theme: minima # A simple and clean base theme
-remote_theme: mmistakes/minimal-mistakes # A robust theme for modern design
+theme: minima
 
 # Website Customization
 markdown: kramdown
@@ -22,48 +21,17 @@ plugins:
   - jekyll-feed            # Adds an RSS feed for your blog
   - jekyll-paginate        # Paginate posts for better navigation
   - jekyll-archives        # Archive pages for posts
-  - jekyll-assets          # Asset pipeline for advanced styling
-  - jekyll-livereload      # Reload the site when running locally
-  - jekyll-pwa             # Add Progressive Web App features (like Apple icons)
-  
-# Theme-Specific Configuration
-minima:
-  skin: dark # Choose from available skins (light, dark, solarized, etc.)
-  social_links:
-    github: https://github.com/imysw
-    linkedin: https://www.linkedin.com/in/si-yuan-wong-322b87216
-
-# Progressive Web App (PWA) Features
-pwa:
-  manifest:
-    name: Si Yuan's Data Science Hub
-    short_name: SY Hub
-    description: Explore projects and insights in data science and AI.
-    theme_color: "#000000"
-    background_color: "#ffffff"
-    display: standalone
-    start_url: /
-    icons:
-      - src: /assets/icons/apple-touch-icon.png
-        sizes: 180x180
-        type: image/png
-      - src: /assets/icons/favicon-32x32.png
-        sizes: 32x32
-        type: image/png
-      - src: /assets/icons/favicon-16x16.png
-        sizes: 16x16
-        type: image/png
 
 # Pagination Settings
 paginate: 5 # Limit posts displayed on a single page
 permalink: pretty # Makes URLs clean and user-friendly
 
-# Appearance Enhancements
-remote_theme: mmistakes/minimal-mistakes # A visually rich theme
-google_fonts:
-  - family: "Helvetica Neue" # Apple's primary font
-  - family: "Arial"
-  - family: "San Francisco"
+# Theme-Specific Configuration
+minima:
+  skin: light # Choose from available skins (light, dark, solarized, etc.)
+  social_links:
+    github: https://github.com/imysw
+    linkedin: https://www.linkedin.com/in/si-yuan-wong-322b87216
 
 # Footer Content
 footer:
