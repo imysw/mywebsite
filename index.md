@@ -17,7 +17,6 @@ I’m currently pursuing a **Bachelor of Science (Honours) in Data Science and A
 
 ### My Focus Areas:
 I specialize in solving challenging problems through **cutting-edge AI solutions**, with recent projects involving:
-- **Energy forecasting with LSTMs.**
 - **Toxicity detection using transformer models like RoBERTa and DeBERTa.**
 - **Customer analytics to optimize marketing strategies.**
 
