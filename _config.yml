@@ -31,13 +31,10 @@ paginate: 5
 minima:
   skin: solarized
   social_links:
-    twitter: https://twitter.com/your_twitter_handle
-    github: https://github.com/your_github_username
+    github: https://github.com/imysw
     linkedin: https://www.linkedin.com/in/si-yuan-wong-322b87216
 
 # URL Settings
-baseurl: "" # If hosted on GitHub Pages, set this to the repository name (e.g., "/mywebsite")
+baseurl: "/mywebsite"
 url: "https://imysw.github.io"
-
-# Additional Options
 permalink: pretty
