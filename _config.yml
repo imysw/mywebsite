@@ -1,40 +1,63 @@
 # Basic Site Information
+title: Si Yuan's Data Science Hub
 author: Si Yuan
 description: Exploring the intersection of data science, deep learning, and innovation.
 theme: minima
+remote_theme: mmistakes/minimal-mistakes # A robust and modern Jekyll theme for professional sites
 
 # Website Customization
 markdown: kramdown
 highlighter: rouge
 
-# Social Links (Add these to your footer or navigation)
+# Social Links (Displayed in footer or header)
 social_links:
   github: https://github.com/imysw
   linkedin: https://www.linkedin.com/in/si-yuan-wong-322b87216
   email: mailto:siyuan.wong@u.nus.edu
+  rss: /feed.xml
+  twitter: https://twitter.com/your-twitter-handle # Optional
 
 # Plugins for SEO and Customization
 plugins:
-  - jekyll-seo-tag         # For better search engine optimization
-  - jekyll-sitemap         # Automatically generates a sitemap
+  - jekyll-seo-tag         # Improve search engine optimization
+  - jekyll-sitemap         # Generate a sitemap for better crawling
   - jekyll-feed            # Adds an RSS feed for your blog
-  - jekyll-paginate        # Paginate posts for better navigation
-  - jekyll-archives        # Archive pages for posts
+  - jekyll-paginate        # Paginate posts for a cleaner display
+  - jekyll-archives        # Archive pages for blog posts
+  - jekyll-assets          # Advanced asset management (CSS/JS optimization)
+  - jekyll-minifier        # Minify HTML, CSS, and JS for performance
+  - jekyll-include-cache   # Cache includes for better performance
 
 # Pagination Settings
-paginate: 5 # Limit posts displayed on a single page
-permalink: pretty # Makes URLs clean and user-friendly
+paginate: 6 # Number of posts per page
+permalink: /:categories/:title/ # Clean, category-based URLs
 
-# Theme-Specific Configuration
+# Appearance Customization
 minima:
-  skin: light # Choose from available skins (light, dark, solarized, etc.)
+  skin: light # Available options: light, dark, solarized
+  header: true # Enable a visually appealing header
   social_links:
     github: https://github.com/imysw
     linkedin: https://www.linkedin.com/in/si-yuan-wong-322b87216
 
-# Footer Content
-footer:
-  credits:
-    enabled: true
-    content: |
-      Powered by Jekyll and Minima | Designed by Si Yuan
+# Advanced Design Configuration
+remote_theme: mmistakes/minimal-mistakes
+defaults:
+  - scope:
+      path: "" # Applies to all content
+    values:
+      layout: single # Use a single-column layout by default
+
+# Progressive Web App Configuration
+pwa:
+  manifest:
+    name: Si Yuan's Data Science Hub
+    short_name: SY Hub
+    description: Explore cutting-edge data science projects and innovations.
+    theme_color: "#1a1a1a"
+    background_color: "#ffffff"
+    display: standalone
+    start_url: /
+
+# Analytics and Tracking
+#google_analytics: UA-XXXXXX-X
